@@ -1,0 +1,45 @@
+{
+  "name": "quick-ui-groq-cli",
+  "version": "1.0.1",
+  "description": "Instantly scaffold React + Tailwind CSS components via natural language using Groq AI.",
+  "main": "dist/index.js",
+  "bin": {
+    "quick-ui-groq-cli": "./dist/index.js",
+    "quick-ui": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "react",
+    "tailwind",
+    "groq",
+    "ai-generator",
+    "component-scaffolding",
+    "typescript"
+  ],
+  "author": "Kavya",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^1.8.1",
+    "chalk": "^6.0.1",
+    "clsx": "^2.1.1",
+    "commander": "^15.0.0",
+    "conf": "^15.1.0",
+    "dotenv": "^18.0.4",
+    "fs-extra": "^11.4.1",
+    "groq-sdk": "^1.6.0",
+    "prettier": "^3.9.9"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
